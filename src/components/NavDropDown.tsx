@@ -15,11 +15,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
   };
 
   return (
-    <div
-      className={`relative inline-block group text-left z-[1000] ${
-        isOpen ? "backdrop-filter-blur" : ""
-      } `}
-    >
+    <div className={`relative inline-block group text-left z-[1000] `}>
       <div>
         <button
           type="button"
@@ -46,27 +42,21 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
               aria-orientation="vertical"
               aria-labelledby="options-menu"
             >
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
-                role="menuitem"
-              >
-                PATCHES
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
-                role="menuitem"
-              >
-                GAMEPLAY UPDATES
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
-                role="menuitem"
-              >
-                PREVIOUS UPDATES
-              </Link>
+              {["PATCHES", "GAMEPLAY UPDATES", "PREVIOUS UPDATES"].map(
+                (name) => {
+                  return (
+                    <Link
+                      href={`/${name}`}
+                      key={name}
+                      className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
+                      role="menuitem"
+                    >
+                      {name}
+                    </Link>
+                  );
+                }
+              )}
+              <div className="absolute top-0 left-0 bg-white/10 backdrop-blur-[6px]  w-full h-full z-[-1]"></div>
             </div>
           </div>
         </div>
