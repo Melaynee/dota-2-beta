@@ -8,7 +8,7 @@ import ButtonPlayForFree from "./ButtonPlayForFree";
 
 const Nav = () => {
   return (
-    <div className="pt-3 px-8 bg-transparent text-white flex justify-between items-center fixed w-full top-0 z-50">
+    <div className="pt-3 px-8 bg-transparent text-white flex justify-between items-center absolute w-full top-0 z-50">
       <div className="flex items-center gap-10 ">
         <Link
           href="/"

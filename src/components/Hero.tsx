@@ -4,7 +4,7 @@ import ButtonPlayForFree from "./ButtonPlayForFree";
 const Hero = () => {
   return (
     <div className="container mx-auto px-4 ">
-      <div className="max-w-[420px] font-semibold hero-text fixed top-[16%] left-[10%] z-10 ">
+      <div className="max-w-[420px] font-semibold hero-text absolute top-[16%] left-[10%] z-10 ">
         <h1 className="text-white text-[4.2rem] tracking-wider leading-none">
           “A MODERN MULTIPLAYER MASTERPIECE.”
         </h1>
