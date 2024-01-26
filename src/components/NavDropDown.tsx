@@ -15,7 +15,10 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
   };
 
   return (
-    <div className={`relative inline-block group text-left z-[1000] `}>
+    <div
+      className={`relative inline-block group text-left z-[1000] `}
+      onMouseLeave={toggleDropdown}
+    >
       <div>
         <button
           type="button"
@@ -32,10 +35,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
 
       {isOpen && (
         <div>
-          <div
-            onMouseLeave={toggleDropdown}
-            className="origin-top-right absolute w-56 rounded-none shadow-lg bg-white/10 ring-1 ring-white ring-opacity-80 transition-all "
-          >
+          <div className="origin-top-right absolute w-56 rounded-none shadow-lg bg-white/10 ring-1 ring-white ring-opacity-80 transition-all ">
             <div
               className="py-1"
               role="menu"

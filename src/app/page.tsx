@@ -1,19 +1,22 @@
-import BackgroundVideo from "@/components/BackgroundVideo";
 import Hero from "@/components/Hero";
-import Link from "next/link";
+import HeroText from "@/components/HeroText";
+import News from "@/components/News";
 
 export default function Home() {
   return (
-    <main className="flex pt-[76.41px] min-h-screen flex-col justify-between text-white ">
-      <div className="bg-black -z-[20] h-screen"></div>
-      <div className="">
-        <BackgroundVideo />
+    <main className="text-white">
+      <section className="-mb-10 relative h-[75vh]">
         <Hero />
-      </div>
-      <div className="text-white">
-        <h3>Latest News</h3>
-        <Link href={"#"}>View All</Link>
-      </div>
+        <div className="flex flex-col justify-center ml-[10%]">
+          <HeroText />
+        </div>
+        <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-black via-black to-transparent"></div>
+      </section>
+      <section className="text-white">
+        <div className="bg-black">
+          <News />
+        </div>
+      </section>
     </main>
   );
 }

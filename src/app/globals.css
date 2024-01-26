@@ -28,7 +28,3 @@
     rgba(0, 0, 0, 7) 100%
   );
 }
-
-.backdrop-filter-blur {
-  backdrop-filter: blur(50px);
-}
