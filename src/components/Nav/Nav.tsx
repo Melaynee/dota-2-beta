@@ -10,7 +10,7 @@ import Burger from "./Burger";
 
 const Nav = () => {
   return (
-    <div className="pt-4 px-8 bg-transparent text-white flex justify-between items-center absolute w-full top-0 z-50">
+    <div className="pt-3 px-8 bg-transparent text-white flex justify-between items-center absolute w-full top-0 z-50">
       <div className="flex lg:gap-10">
         <Link
           href="/"
@@ -61,10 +61,15 @@ const Nav = () => {
           >
             Login
           </Link>
-          <LanguageSelector className="flex gap-1 lg:gap-5 items-center text-left" />
+          <LanguageSelector className="flex gap-1 lg:gap-2 items-center text-left" />
         </div>
 
-        <PrimaryButton isIcon Nav className="hidden xl:flex">
+        <PrimaryButton
+          isIcon
+          Nav
+          className="hidden xl:flex"
+          iconClassName="w-[20px]"
+        >
           Play For Free
         </PrimaryButton>
       </div>

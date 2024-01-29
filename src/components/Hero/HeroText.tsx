@@ -1,5 +1,6 @@
 import React from "react";
 import PrimaryButton from "../PrimaryButton";
+import HorizontalBar from "../HorizontalBar";
 
 const HeroText = () => {
   return (
@@ -12,7 +13,7 @@ const HeroText = () => {
           <h3 className="mt-2 text-white/70 tracking-[0.08rem] text-xl">
             - DESTRUCTOID
           </h3>
-          <div className="mt-5 w-[80px] h-0 border-2 border-red-500 "></div>
+          <HorizontalBar />
           <div className="mt-8 cursor-pointer">
             <PrimaryButton isIcon Hero className="h-[72px] ">
               <h3 className="tracking-[0.1rem] text-2xl leading-none ">

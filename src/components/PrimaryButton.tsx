@@ -25,11 +25,12 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   return (
     <Link
       className={cn(
-        "uppercase rounded-lg bg-transparent border-[3px] border-white/70 font-semibold tracking-[0.15rem] text-xl flex items-center hover:border-red-500 hover:-translate-y-[2px] duration-200 w-full",
+        "uppercase rounded-md bg-transparent border-[3px] border-white/40 font-semibold tracking-[0.15rem] text-xl flex items-center hover:border-red-500 hover:-translate-y-[2px] duration-200 w-60 h-14",
         className,
         {
-          "w-[288px] h-[78px] flex justify-around text-left": Hero,
-          "w-[255px] h-[58px] flex justify-around": Nav,
+          "w-[288px] h-[78px] flex justify-around border-white/70 text-left":
+            Hero,
+          "w-[245px] h-[58px] flex justify-around tracking-[0.09rem]": Nav,
         }
       )}
       {...props}
@@ -39,11 +40,11 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
         <Image
           src={steamLogo}
           width={30}
-          className={cn("", iconClassName)}
+          className={cn("ml-5", iconClassName)}
           alt="steam logo"
         />
       )}
-      <div>{children}</div>
+      <div className="w-fit mx-auto text-lg">{children}</div>
     </Link>
   );
 };

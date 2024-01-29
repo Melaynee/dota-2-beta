@@ -36,9 +36,9 @@ const news = [
 
 const News = () => {
   return (
-    <div className="-mb-[10rem]">
+    <div className="">
       <div className="max-w-[1200px] mx-auto flex flex-col items-start">
-        <div className="flex gap-5 uppercase tracking-widest mb-1">
+        <div className="flex gap-5 ml-4 uppercase tracking-widest mb-1">
           <h3 className="text-base text-white z-[1]">Latest News</h3>
           <Link
             href={"#"}
@@ -47,7 +47,7 @@ const News = () => {
             View All →
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:flex w-full items-center justify-around min-h-[245px]">
+        <div className="grid grid-cols-1 sm:flex w-full items-center justify-between min-h-[245px]">
           {news.map((blog) => (
             <BlogCard
               key={blog.id}
