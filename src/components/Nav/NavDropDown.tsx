@@ -22,7 +22,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
       <div>
         <button
           type="button"
-          className="text-xl tracking-widest py-2 px-6 border-[0.5px] border-transparent group-hover:bg-white/20 duration-150 group-hover:border-white rounded-se-lg rounded-ss-lg"
+          className="text-xl tracking-widest py-3 px-5 min-w-[60px] w-full border-[0.5px] border-transparent group-hover:bg-white/20 duration-150 group-hover:border-white rounded-se-lg rounded-ss-lg brightness-75 hover:brightness-100"
           id="options-menu"
           aria-haspopup="true"
           aria-expanded="true"
@@ -35,7 +35,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
 
       {isOpen && (
         <div>
-          <div className="origin-top-right absolute w-56 rounded-none shadow-lg bg-white/10 ring-1 ring-white ring-opacity-80 transition-all ">
+          <div className="origin-top-right absolute w-56 rounded-none shadow-lg bg-white/10 ring-1 ring-white ring-opacity-80 transition-all delay-200 ">
             <div
               className="py-1"
               role="menu"

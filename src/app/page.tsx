@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero";
-import HeroText from "@/components/HeroText";
-import News from "@/components/News";
+import Hero from "@/components/Hero/Hero";
+import HeroText from "@/components/Hero/HeroText";
+import News from "@/components/News/News";
 
 export default function Home() {
   return (
     <main className="text-white">
-      <section className="-mb-10 relative h-[75vh]">
+      <section className="-mb-20 relative h-[75vh]">
         <Hero />
-        <div className="flex flex-col justify-center ml-[10%]">
+        <div className="flex absolute left-0 top-[20%] lg:ml-[10%]">
           <HeroText />
         </div>
         <div className="absolute bottom-0 w-full h-[200px] bg-gradient-to-t from-black via-black to-transparent"></div>

@@ -1,5 +1,6 @@
 // components/LanguageSelector.tsx
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -25,8 +26,15 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
           aria-expanded="true"
           onMouseEnter={toggleLanguageSelector}
         >
+          <Image
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/language.svg"
+            width={10}
+            height={10}
+            loading="lazy"
+            alt="language"
+          />
           <span className="uppercase text-sm brightness-75 tracking-widest ">
-            Select Language{" "}
+            Select Language
           </span>
           <span className="text-[8px] align-center">▼</span>
         </button>
@@ -58,7 +66,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
               <Link
                 href={"/"}
                 key={index}
-                className="block px-3 text-xs font-thin mb-1 border-2 border-transparent hover:bg-[#999999] hover:border-red-500 hover:text-black hover:font-light transition duration-200"
+                className="block px-3 text-[10px] font-thin mb-1 py-[1px] hover:bg-[#999999] hover:text-black hover:font-light transition ease-in duration-200"
               >
                 {item}
               </Link>

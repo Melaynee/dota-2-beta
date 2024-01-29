@@ -1,28 +1,27 @@
 import React from "react";
-import ButtonPlayForFree from "./ButtonPlayForFree";
+import PrimaryButton from "../PrimaryButton";
 
 const HeroText = () => {
   return (
     <div className="container mx-auto px-4 ">
-      <div className="flex absolute top-[23%] left-[10%]">
-        <div className="max-w-[60%] w-fit font-semibold hero-text justify-center z-10 ">
-          <h1 className="text-white text-[4.2rem] tracking-wider leading-none">
+      <div className="flex lg:absolute top-[20%] left-[10%]">
+        <div className="min-w-36 md:min-w-[500px] max-w-[60%] w-fit font-semibold hero-text justify-center z-10 ">
+          <h1 className="text-white text-[2rem] sm:text-[4.2rem] text-shadow tracking-wider leading-[0.95]">
             “A MODERN MULTIPLAYER MASTERPIECE.”
           </h1>
           <h3 className="mt-2 text-white/70 tracking-[0.08rem] text-xl">
-            {" "}
             - DESTRUCTOID
           </h3>
           <div className="mt-5 w-[80px] h-0 border-2 border-red-500 "></div>
-          <div className="mt-8 min-w-[288px] max-w-[30%] cursor-pointer">
-            <ButtonPlayForFree className="w-[30px]">
-              <h3 className="tracking-widest text-2xl leading-0">
+          <div className="mt-8 cursor-pointer">
+            <PrimaryButton isIcon Hero className="h-[72px] ">
+              <h3 className="tracking-[0.1rem] text-2xl leading-none ">
                 Play For Free
               </h3>
               <p className="text-base tracking-widest text-white/70 font-thin">
                 download on steam
               </p>
-            </ButtonPlayForFree>
+            </PrimaryButton>
           </div>
         </div>
       </div>
