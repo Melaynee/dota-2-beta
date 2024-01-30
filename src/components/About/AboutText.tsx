@@ -2,13 +2,18 @@
 import React from "react";
 import HorizontalBar from "../HorizontalBar";
 import PrimaryButton from "../PrimaryButton";
-import Slide from "./Slide";
+import Slide from "../Slide";
 
 const AboutText = () => {
   return (
     <div className="text-[#E2DACE] flex flex-col items-center justify-center ">
       <div className={`uppercase text-center leading-none w-full }`}>
-        <Slide />
+        <Slide>
+          <h4 className="opacity-60 text-[60px] font-bold tracking-wide">
+            Join the
+          </h4>
+          <h3 className="text-[115px] font-bold ">battle of the ancient</h3>
+        </Slide>
       </div>
       <div className="mx-auto w-fit">
         <div className="flex flex-col items-center justify-center text-center w-[1000px]">
