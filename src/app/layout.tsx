@@ -3,6 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import { ReactQueryProvider } from "@/utils/ReactQueryProvider";
+import Footer from "@/components/Footer/Footer";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <body className={noto_sans.className}>
           <Nav />
           {children}
+          <Footer />
         </body>
       </html>
     </ReactQueryProvider>

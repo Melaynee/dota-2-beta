@@ -16,6 +16,8 @@ const config: Config = {
           "url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/heroes_full.jpg')",
         dpcHero:
           'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg")',
+        playHero:
+          'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png")',
       },
     },
   },

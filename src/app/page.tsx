@@ -7,6 +7,7 @@ import ChooseHeroText from "@/components/ChooseHero/ChooseHeroText";
 import CarouselList from "@/components/ChooseHero/CarouselList";
 import DPCHeroText from "@/components/DPC/DPCHeroText";
 import DPCImages from "@/components/DPC/DPCImages";
+import PlayText from "@/components/Play/PlayText";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
         <div className="flex flex-col mt-[31.75rem]">
           <DPCHeroText />
         </div>
+      </section>
+      <section className="relative bg-playHero bg-cover my-10 mx-auto">
+        <PlayText />
       </section>
     </main>
   );

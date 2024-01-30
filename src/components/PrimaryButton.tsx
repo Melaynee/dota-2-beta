@@ -11,6 +11,7 @@ interface PrimaryButtonProps {
   Hero?: boolean;
   Nav?: boolean;
   iconClassName?: string;
+  href?: string;
 }
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({
@@ -20,6 +21,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   Hero = false,
   Nav = false,
   iconClassName,
+  href = "https://store.steampowered.com/app/570/Dota_2/",
   ...props
 }) => {
   return (
@@ -35,7 +37,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
         }
       )}
       {...props}
-      href="https://store.steampowered.com/app/570940/Dota_2/"
+      href={href}
     >
       {isIcon && (
         <Image
