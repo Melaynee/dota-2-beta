@@ -4,6 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import HeroText from "@/components/Hero/HeroText";
 import News from "@/components/News/News";
 import ChooseHeroText from "@/components/ChooseHero/ChooseHeroText";
+import CarouselList from "@/components/ChooseHero/CarouselList";
 
 export default function Home() {
   return (
@@ -23,12 +24,15 @@ export default function Home() {
         <AboutText />
       </section>
       <section
-        className={`relative min-h-[2000px] flex flex-col bg-chooseHero bg-[length:3500px] bg-top bg-no-repeat`}
+        className={`relative min-h-[2000px] flex flex-col bg-chooseHero bg-[length:3500px] bg-top bg-no-repeat mb-[9rem]`}
       >
-        <div className="bg-gradient-to-t from-transparent via-transparent  to-black absolute top-0 left-0 right-0 w-full h-full"></div>
-
-        <ChooseHeroText />
+        <div className="bg-gradient-to-t from-transparent via-transparent to-black absolute top-0 left-0 right-0 w-full h-1/3"></div>
+        <div className="flex flex-col  mt-[56.25rem]">
+          <ChooseHeroText />
+          <CarouselList />
+        </div>
       </section>
+      <section></section>
     </main>
   );
 }

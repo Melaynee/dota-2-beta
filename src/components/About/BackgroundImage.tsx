@@ -7,7 +7,14 @@ const AboutImage = () => {
       <Image
         src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/radiant_dire5.jpg"
         alt="about image"
-        className="w-full opacity-60 -z-[2]"
+        className="w-full opacity-60 -z-[2] hidden lg:block"
+        width={4000}
+        height={1680}
+      />
+      <Image
+        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/battle_mobile.jpg"
+        alt="about image"
+        className="w-full opacity-60 -z-[2] lg:hidden"
         width={4000}
         height={1680}
       />

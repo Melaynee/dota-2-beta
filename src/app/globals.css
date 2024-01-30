@@ -32,6 +32,19 @@
   }
 }
 
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-left {
+  animation: marqueeLeft 137s linear infinite;
+}
+
 .about-text {
   animation: slideinToTop 2s ease-in-out timing-function delay iteration-count
     direction fill-mode;

@@ -64,12 +64,7 @@ const Nav = () => {
           <LanguageSelector className="flex gap-1 lg:gap-2 items-center text-left" />
         </div>
 
-        <PrimaryButton
-          isIcon
-          Nav
-          className="hidden xl:flex"
-          iconClassName="w-[20px]"
-        >
+        <PrimaryButton isIcon Nav iconClassName="w-[12px] sm:w-[20px]">
           Play For Free
         </PrimaryButton>
       </div>

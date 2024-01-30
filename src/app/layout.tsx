@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
+import { ReactQueryProvider } from "@/utils/ReactQueryProvider";
 
 const noto_sans = Noto_Sans({ subsets: ["latin"] });
 
@@ -16,14 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body className={noto_sans.className}>
-        <Nav />
-        {children}
-      </body>
-    </html>
+    <ReactQueryProvider>
+      <html lang="en">
+        <head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+        </head>
+        <body className={noto_sans.className}>
+          <Nav />
+          {children}
+        </body>
+      </html>
+    </ReactQueryProvider>
   );
 }

@@ -38,7 +38,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
               </div>
             </div>
           </div>
-          <div className=" absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-slate-800 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-slate-800 to-transparent"></div>
         </div>
       </div>
     </Link>

@@ -30,7 +30,8 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
         {
           "w-[288px] h-[78px] flex justify-around border-white/70 text-left":
             Hero,
-          "w-[245px] h-[58px] flex justify-around tracking-[0.09rem]": Nav,
+          "hidden w-[245px] h-[58px] xl:flex justify-around tracking-[0.09rem]":
+            Nav,
         }
       )}
       {...props}
