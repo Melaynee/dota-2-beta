@@ -4,7 +4,7 @@ import PrimaryButton from "../PrimaryButton";
 
 const PlayText = () => {
   return (
-    <div className="text-[#E2DACE] flex flex-col py-[50px] px-[150px]">
+    <div className="text-[#E2DACE] flex flex-col items-center sm:items-start px-0 py-[50px] sm:px-[150px]">
       <div className="leading-[0.95]">
         <h4 className="opacity-60 text-[40px] sm:text-[60px] font-bold tracking-wide">
           JOIN THE
