@@ -36,7 +36,7 @@ const HeroCard = ({
             alt={hero.primary_attr}
             width={20}
             height={20}
-            className="ml-1"
+            className="ml-1 w-auto h-auto"
           />
           <h3 className="uppercase font-semibold tracking-wide text-xl">
             {hero.localized_name}

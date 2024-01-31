@@ -43,7 +43,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
         <Image
           src={steamLogo}
           width={30}
-          className={cn("ml-5", iconClassName)}
+          className={cn("ml-5 w-auto h-auto", iconClassName)}
           alt="steam logo"
         />
       )}

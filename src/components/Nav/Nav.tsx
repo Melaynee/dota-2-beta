@@ -22,7 +22,7 @@ const Nav = () => {
             src={logo}
             alt="logo"
             loading="lazy"
-            className="hidden xl:block"
+            className="hidden xl:block w-auto h-auto"
           />
           <Image
             width={50}
@@ -30,7 +30,7 @@ const Nav = () => {
             src={logoMedium}
             alt="logo"
             loading="lazy"
-            className="block md:hidden lg:block xl:hidden"
+            className="block md:hidden lg:block xl:hidden w-auto h-auto"
           />
         </Link>
         <div className="hidden md:flex gap-10 text-xl items-center">

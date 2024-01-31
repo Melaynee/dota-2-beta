@@ -26,7 +26,7 @@ const HeroUpdates = ({ heroes }: any) => {
                 alt={hero}
                 width={128}
                 height={52}
-                className="mr-5 "
+                className="mr-5 w-auto h-auto "
               />
               <h4 className="uppercase text-2xl font-semibold tracking-widest text-shadow">
                 {hero.replace("_", " ")}

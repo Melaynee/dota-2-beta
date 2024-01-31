@@ -26,7 +26,7 @@ const ItemUpdates = ({ items }: any) => {
                 alt={item}
                 width={56}
                 height={42}
-                className="mr-4 mb-3"
+                className="mr-4 w-auto h-auto mb-3"
               />
               <h4 className="uppercase text-2xl font-semibold tracking-widest text-shadow">
                 {item.replace("_", " ")}

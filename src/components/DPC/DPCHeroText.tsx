@@ -13,7 +13,7 @@ const DPCHeroText = () => {
           alt="dpc logo"
           width={100}
           height={100}
-          className="mx-auto mb-5"
+          className="mx-auto w-auto h-auto mb-5"
         />
         <Slide>
           <h4 className="opacity-60 text-[40px] sm:text-[60px] font-bold tracking-wide">
