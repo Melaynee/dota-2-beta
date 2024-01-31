@@ -46,7 +46,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
                 (name) => {
                   return (
                     <Link
-                      href={`/${name}`}
+                      href={`/${name.toLowerCase()}`}
                       key={name}
                       className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
                       role="menuitem"

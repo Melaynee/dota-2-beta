@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,6 +19,8 @@ const config: Config = {
           'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg")',
         playHero:
           'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png")',
+        patchesPage:
+          "url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/featured.jpg')",
       },
     },
   },
