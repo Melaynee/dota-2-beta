@@ -3,7 +3,7 @@ import Patch from "@/components/Patch/Patch";
 
 const page = () => {
   return (
-    <div className="bg-patchesPage min-h-screen pt-[77px]">
+    <div className="bg-patchesPage min-h-screen pb-10 pt-[77px]">
       <Patch />
     </div>
   );
