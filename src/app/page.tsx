@@ -12,7 +12,7 @@ import PlayText from "@/components/Play/PlayText";
 export default function Home() {
   return (
     <main className="text-white">
-      <section className="-mb-10 relative h-[75vh]">
+      <section className="mb-10 md:-mb-10 relative h-[75vh]">
         <Hero />
         <div className="flex absolute left-0 top-[22%] lg:ml-[10%]">
           <HeroText />

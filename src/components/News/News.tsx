@@ -52,7 +52,7 @@ const News = () => {
             <BlogCard
               key={blog.id}
               {...blog}
-              className="m-4 group shadow-black"
+              className="m-1 md:m-4 group shadow-black"
             />
           ))}
         </div>

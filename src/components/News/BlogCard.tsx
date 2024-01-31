@@ -20,7 +20,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <Link href={link} className={className}>
-      <div className="border-gray-500 min-w-full sm:w-[200px] lg:w-[370px] border-b-[4px] hover:border-red-500 rounded-none group-hover:scale-[1.02] duration-200 overflow-hidden">
+      <div className="border-gray-500 min-w-full sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[370px] border-b-[4px] hover:border-red-500 rounded-none group-hover:scale-[1.02] duration-200 overflow-hidden">
         <div
           className="min-h-52 relative bg-cover bg-center flex flex-col justify-end rounded-none pl-4"
           style={{ backgroundImage: `url(${img})` }}
