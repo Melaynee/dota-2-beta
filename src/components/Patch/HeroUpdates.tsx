@@ -4,7 +4,6 @@ import DisplayComponent from "./DisplayComponent";
 
 const HeroUpdates = ({ heroes }: any) => {
   let arr = [];
-  console.log(heroes);
 
   for (const hero in heroes) {
     arr.push(hero);
