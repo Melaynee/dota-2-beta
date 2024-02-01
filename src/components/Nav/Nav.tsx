@@ -13,6 +13,7 @@ const Nav = () => {
     <div className="pt-3 px-8 bg-transparent text-white flex justify-between items-center absolute w-full top-0 z-50">
       <div className="flex lg:gap-10">
         <Link
+          prefetch={false}
           href="/"
           className="brightness-75 lg:w-[50px] flex items-center xl:w-[200px] transition-opacity hover:brightness-125 cursor-pointer"
         >
@@ -37,6 +38,7 @@ const Nav = () => {
           <NavDropDown className="text-xl transition-all duration-200 hover:brightness-100 font-[500]" />
           {["heroes", "news", "esports"].map((item, index) => (
             <Link
+              prefetch={false}
               key={index}
               href="/"
               className="brightness-75 transition-all duration-200 delay-50 hover:brightness-125 cursor-pointer"
@@ -56,6 +58,7 @@ const Nav = () => {
         <Burger />
         <div className="hidden md:flex flex-col text-right">
           <Link
+            prefetch={false}
             href="#"
             className="uppercase tracking-widest brightness-75 font-[500] text-sm hover:brightness-100"
           >

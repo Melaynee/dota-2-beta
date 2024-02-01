@@ -41,6 +41,7 @@ const News = () => {
         <div className="flex gap-5 ml-4 uppercase tracking-widest mb-1">
           <h3 className="text-base text-white z-[1]">Latest News</h3>
           <Link
+            prefetch={false}
             href={"#"}
             className="brightness-75 text-base hover:brightness-100 hover:tracking-[0.2rem] hover:text-[17px] duration-150"
           >

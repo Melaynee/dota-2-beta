@@ -23,6 +23,7 @@ const HeroCard = ({
 
   return (
     <Link
+      prefetch={false}
       href={`/heroes/${hero.name}`}
       className="flex flex-col items-center group"
     >

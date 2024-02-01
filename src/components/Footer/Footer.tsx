@@ -8,6 +8,7 @@ const Footer = () => {
       <div className="w-[60%] mx-auto">
         <div className="flex justify-around max-w-[400px] mx-auto items-center">
           <Link
+            prefetch={false}
             href={"https://www.valvesoftware.com/en/about"}
             className="mx-[15px] mb-[20px]"
           >
@@ -19,7 +20,11 @@ const Footer = () => {
               className=" max-h-[30px] w-full"
             />
           </Link>
-          <Link href="https://www.dota2.com" className="mx-[15px] mb-[20px]">
+          <Link
+            prefetch={false}
+            href="https://www.dota2.com"
+            className="mx-[15px] mb-[20px]"
+          >
             <Image
               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dota_footer_logo.png"
               alt="dota logo"

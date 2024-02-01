@@ -26,6 +26,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 }) => {
   return (
     <Link
+      prefetch={false}
       className={cn(
         "uppercase rounded-md bg-transparent border-[3px] border-white/40 font-semibold tracking-[0.15rem] text-xl flex items-center hover:border-red-500 hover:-translate-y-[2px] duration-200 w-60 h-14",
         className,

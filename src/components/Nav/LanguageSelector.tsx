@@ -64,6 +64,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ className }) => {
               "Ukrainian",
             ].map((item, index) => (
               <Link
+                prefetch={false}
                 href={"/"}
                 key={index}
                 className="block px-3 text-[10px] font-thin mb-1 py-[1px] hover:bg-[#999999] hover:text-black hover:font-light transition ease-in duration-200"
