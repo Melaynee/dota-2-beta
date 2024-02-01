@@ -6,13 +6,16 @@ const DisplayComponent = ({ item }: { item: string }) => {
   const shouldUseInnerHTML = hasHtmlTags(item);
 
   return (
-    <div>
+    <>
       {shouldUseInnerHTML ? (
-        <div dangerouslySetInnerHTML={{ __html: item }} />
+        <div
+          dangerouslySetInnerHTML={{ __html: item }}
+          className="html-input"
+        />
       ) : (
-        <li className="list-disc text-white/70">{item}</li>
+        <li className="list-disc text-lg text-white/70">{item}</li>
       )}
-    </div>
+    </>
   );
 };
 

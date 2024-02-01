@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useFetchPatch from "./useFetchPatch";
 import { mapKeys } from "./mapKeys";
 import GameplayUpdate from "./GameplayUpdate";
@@ -10,17 +10,20 @@ import HeroUpdates from "./HeroUpdates";
 const Patch = () => {
   const { data, isError, isLoading } = useFetchPatch();
   const [patch, setPatch] = useState("7_35b");
+  useEffect(() => {
+    if (!isLoading) {
+      setGeneral(data[patch].general);
+      setHeroes(data[patch].heroes);
+      setItems(data[patch].items);
+    }
+  }, [data, isLoading, patch]);
 
   const [general, setGeneral] = useState<[]>([]);
   const [heroes, setHeroes] = useState<[]>([]);
   const [items, setItems] = useState({});
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setPatch(event.target.value);
-
-    setGeneral(data[patch].general);
-    setHeroes(data[patch].heroes);
-    setItems(data[patch].items);
+  const handleChange = (event?: React.ChangeEvent<HTMLSelectElement>) => {
+    if (event) setPatch(event.target.value);
   };
 
   if (isError) return <div>Error</div>;

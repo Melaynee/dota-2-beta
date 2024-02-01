@@ -69,3 +69,25 @@
 body {
   background-color: black;
 }
+
+.html-input > span {
+  text-transform: uppercase;
+  color: #36a15e;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.html-input > span[class=\\\"Subtitle\\\"] {
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.html-input > font {
+  color: #7ca1cc;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.html-input > font:nth-child(2n) {
+  color: #f05039;
+}
