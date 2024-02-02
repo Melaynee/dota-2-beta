@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import HorizontalBar from "../HorizontalBar";
-import Slide from "../Slide";
+import HorizontalBar from "../../HorizontalBar";
+import Slide from "../../Slide";
 import Image from "next/image";
 
 const DPCHeroText = () => {

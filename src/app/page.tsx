@@ -1,13 +1,13 @@
-import AboutImage from "@/components/About/BackgroundImage";
-import AboutText from "@/components/About/AboutText";
-import Hero from "@/components/Hero/Hero";
-import HeroText from "@/components/Hero/HeroText";
-import News from "@/components/News/News";
-import ChooseHeroText from "@/components/ChooseHero/ChooseHeroText";
-import CarouselList from "@/components/ChooseHero/CarouselList";
-import DPCHeroText from "@/components/DPC/DPCHeroText";
-import DPCImages from "@/components/DPC/DPCImages";
-import PlayText from "@/components/Play/PlayText";
+import AboutImage from "@/components/Home/About/BackgroundImage";
+import AboutText from "@/components/Home/About/AboutText";
+import Hero from "@/components/Home/Hero/Hero";
+import HeroText from "@/components/Home/Hero/HeroText";
+import News from "@/components/Home/News/News";
+import ChooseHeroText from "@/components/Home/ChooseHero/ChooseHeroText";
+import CarouselList from "@/components/Home/ChooseHero/CarouselList";
+import DPCHeroText from "@/components/Home/DPC/DPCHeroText";
+import DPCImages from "@/components/Home/DPC/DPCImages";
+import PlayText from "@/components/Home/Play/PlayText";
 
 export default function Home() {
   return (

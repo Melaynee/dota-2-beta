@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { getAttributeIcon } from "../../utils/attributes";
+import { getAttributeIcon } from "../../../utils/attributes";
 import Link from "next/link";
 
 const HeroCard = ({

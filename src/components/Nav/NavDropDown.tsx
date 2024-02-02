@@ -42,20 +42,22 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
               aria-orientation="vertical"
               aria-labelledby="options-menu"
             >
-              {["PATCHES", "GAMEPLAY UPDATES", "PREVIOUS UPDATES"].map(
-                (name) => {
-                  return (
-                    <Link
-                      href={`/${name.toLowerCase()}`}
-                      key={name}
-                      className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
-                      role="menuitem"
-                    >
-                      {name}
-                    </Link>
-                  );
-                }
-              )}
+              {[
+                { name: "PATCHES", link: "patches" },
+                { name: "GAMEPLAY UPDATES", link: "news/updates" },
+                { name: "PREVIOUS UPDATES", link: "pastupdates" },
+              ].map((value) => {
+                return (
+                  <Link
+                    href={`/${value.link}`}
+                    key={value.name}
+                    className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
+                    role="menuitem"
+                  >
+                    {value.name}
+                  </Link>
+                );
+              })}
               <div className="absolute top-0 left-0 bg-white/10 backdrop-blur-[6px]  w-full h-full z-[-1]"></div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import HorizontalBar from "../HorizontalBar";
-import PrimaryButton from "../PrimaryButton";
-import Slide from "../Slide";
+import HorizontalBar from "../../HorizontalBar";
+import PrimaryButton from "../../PrimaryButton";
+import Slide from "../../Slide";
 
 const ChooseHeroText = () => {
   return (

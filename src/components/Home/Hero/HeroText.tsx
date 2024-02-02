@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryButton from "../PrimaryButton";
-import HorizontalBar from "../HorizontalBar";
+import PrimaryButton from "../../PrimaryButton";
+import HorizontalBar from "../../HorizontalBar";
 
 const HeroText = () => {
   return (

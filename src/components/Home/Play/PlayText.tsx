@@ -1,6 +1,6 @@
 import React from "react";
-import HorizontalBar from "../HorizontalBar";
-import PrimaryButton from "../PrimaryButton";
+import HorizontalBar from "../../HorizontalBar";
+import PrimaryButton from "../../PrimaryButton";
 
 const PlayText = () => {
   return (
