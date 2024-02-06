@@ -40,7 +40,7 @@ const Nav = () => {
             <Link
               prefetch={false}
               key={index}
-              href="/"
+              href={`/${item}`}
               className="brightness-75 transition-all duration-200 delay-50 hover:brightness-125 cursor-pointer"
             >
               <span
