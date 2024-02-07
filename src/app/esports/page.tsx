@@ -1,14 +1,10 @@
 import React from "react";
-import Hero from "@/components/Esports/Hero";
-import Nav from "@/components/Esports/Nav";
-import Options from "@/components/Esports/Options";
+import Section from "@/components/Esports/Section";
 
 const page = () => {
   return (
-    <div className="pt-[77px] text-white h-[200vh]">
-      <Nav />
-      <Hero />
-      <Options />
+    <div className="pt-[77px] text-white">
+      <Section />
     </div>
   );
 };

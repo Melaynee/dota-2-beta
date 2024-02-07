@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import logo from "/public/logo.png";
@@ -41,7 +42,7 @@ const Nav = () => {
               prefetch={false}
               key={index}
               href={`/${item}`}
-              className="brightness-75 transition-all duration-200 delay-50 hover:brightness-125 cursor-pointer"
+              className={`brightness-75 transition-all duration-200 delay-50 hover:brightness-125 cursor-pointer `}
             >
               <span
                 className={`uppercase tracking-[0.1875rem] font-[500] ${
