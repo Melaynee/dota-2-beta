@@ -21,6 +21,8 @@ const config: Config = {
           'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png")',
         patchesPage:
           "url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/featured.jpg')",
+        heroesPage:
+          "url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg')",
       },
     },
   },
