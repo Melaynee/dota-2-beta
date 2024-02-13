@@ -35,9 +35,13 @@ const data = [
 const Main = () => {
   return (
     <div className="bg-patchesPage min-h-[100vh] text-white ">
-      <div className="w-[800px] mx-auto grid grid-cols-2 gap-10 pt-10">
+      <div className="mx-auto max-w-[800px] flex flex-col sm:grid grid-cols-2 gap-10 pt-10">
         {data.map((data) => (
-          <BlogCard key={data.id} {...data} className="w-[300px] group" />
+          <BlogCard
+            key={data.id}
+            {...data}
+            className="w-full md:w-[300px]  mx-auto group"
+          />
         ))}
       </div>
     </div>
