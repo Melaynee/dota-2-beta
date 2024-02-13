@@ -9,7 +9,7 @@ const Header = () => {
       <p className="text-[22px] mt-1">
         From magical tacticians to fierce brutes and cunning rogues, Dota
         2&apos;s hero pool is massive and limitlessly diverse. Unleash
-        incredible abilities and devastating ultimates on your way to
+        incredible abilities and devastating ultimates on your way to{" "}
         <span className="block">victory.</span>
       </p>
     </div>
