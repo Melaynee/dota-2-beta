@@ -20,7 +20,7 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({
     <Link
       prefetch={false}
       className={cn(
-        "uppercase rounded-none bg-[#313131] border-t-[2px] border-[#313131]  font-normal tracking-[0.15rem] text-xl flex items-center w-48 h-14 brightness-75 text-white/60",
+        "uppercase rounded-none bg-[#313131] border-t-[2px] border-[#313131]  font-normal tracking-[0.15rem] text-xl flex items-center sm:w-48 h-14 brightness-75 text-white/60",
         className,
         { "border-[#646566] font-semibold brightness-100 text-white": isActive }
       )}
