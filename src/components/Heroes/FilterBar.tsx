@@ -7,7 +7,21 @@ import Image from "next/image";
 
 const attributes = [str, agi, int, all];
 
-const FilterBar = () => {
+const FilterBar = ({
+  setAttr,
+  attr,
+  hero,
+  setHero,
+}: {
+  setAttr: (attribute: number | null) => void;
+  attr: number | null;
+  hero: string;
+  setHero: (hero: string) => void;
+}) => {
+  const handleClick = (index: number) => {
+    if (attr === index) return setAttr(null);
+    return setAttr(index);
+  };
   return (
     <div className="text-white mt-9 w-[98%] mx-auto">
       <div className="flex justify-between bg-gradient-to-r from-black/60 to-black/20 rounded p-2 shadow-[0_0_5px_#000] items-center">
@@ -22,6 +36,10 @@ const FilterBar = () => {
             <button
               key={index}
               className="w-[34px] h-[34px] bg-[#808080] skew-x-[20deg]"
+              style={{
+                backgroundColor: attr === index ? "#fff" : "#808080",
+              }}
+              onClick={() => handleClick(index)}
             >
               <Image
                 src={attribute}
@@ -38,16 +56,27 @@ const FilterBar = () => {
             COMPLEXITY
           </p>
           <div className="flex gap-1 items-center">
-            <button className="w-[34px] h-[34px] bg-[#808080] skew-x-[15deg] text-3xl">
+            <button
+              disabled
+              className="w-[34px] h-[34px] bg-[#808080] skew-x-[15deg] text-3xl disabled:"
+            >
               <p className="-skew-x-[15deg] text-black/60 -mt-1">♦</p>
             </button>
-            <button className="w-[34px] h-[34px] bg-[#808080] skew-x-[15deg] text-3xl">
+            <button
+              disabled
+              className="w-[34px] h-[34px] bg-[#808080] skew-x-[15deg] text-3xl"
+            >
               <p className="-skew-x-[15deg] mx-auto text-black/60 -mt-1">♦</p>
             </button>
           </div>
         </div>
         <div>
-          <input type="text" className="bg-black/40 h-[50px] w-[250px]" />
+          <input
+            type="text"
+            className="bg-black/40 h-[50px] w-[250px] pl-4"
+            value={hero}
+            onChange={(e) => setHero(e.target.value || "")}
+          />
         </div>
       </div>
     </div>

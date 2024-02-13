@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="">
-      <div className="relative h-[400px]">
+      <div className="relative h-[400px] ">
         <Image
           src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dpc/headers/dpc_header_event_ti12.jpg"
           alt="The International"
@@ -12,7 +12,7 @@ const Hero = () => {
           height={802}
           className="h-[400px] object-cover absolute -z-[10]"
         />
-        <div className="flex justify-around items-center h-full pl-20 pr-12">
+        <div className="flex justify-around items-center h-full pl-20 pr-12 esports-text">
           <div className="flex flex-col items-center text-center mt-5">
             <div className="mb-5">
               <h6 className="tracking-[0.15rem] text-sm">GROUP STAGE</h6>

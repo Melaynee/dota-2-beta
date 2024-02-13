@@ -41,6 +41,17 @@
   }
 }
 
+@keyframes scaleIn {
+  0% {
+    scale: 1.5;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 .marquee-left {
   animation: marqueeLeft 137s linear infinite;
 }
@@ -52,6 +63,10 @@
 
 .hero-text {
   animation: slideInToRight 2s ease-in-out;
+}
+
+.esports-text {
+  animation: scaleIn 0.5s ease;
 }
 
 .gradient-radial {
@@ -90,4 +105,26 @@ body {
 
 .html-input > font:nth-child(2n) {
   color: #f05039;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: translate(100%, 100%);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translate(0%, 0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.item-exit {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: translate(-100%, 0%);
+  transition: opacity 300ms, transform 300ms;
 }
