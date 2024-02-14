@@ -27,7 +27,7 @@ const AboutText = () => {
             strategy or tactic to discover. It&apos;s completely free to play
             and always will be – start defending your ancient now.
           </p>
-          <PrimaryButton>
+          <PrimaryButton href="/news">
             <p>See what&apos;s new</p>
           </PrimaryButton>
         </div>

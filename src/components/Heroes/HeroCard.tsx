@@ -24,7 +24,7 @@ const HeroCard = ({
   return (
     <Link
       prefetch={false}
-      href={`/heroes/${hero.name.slice(14)}`}
+      href={`/hero/${hero.name.slice(14)}`}
       className="flex flex-col items-center group"
     >
       <div

@@ -51,7 +51,7 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
                   <Link
                     href={`/${value.link}`}
                     key={value.name}
-                    className="block px-4 py-2 text-sm text-white  hover:ml-3 transition-all duration-300"
+                    className="block px-4 py-1 text-sm text-white  hover:ml-3 transition-all duration-300"
                     role="menuitem"
                   >
                     {value.name}

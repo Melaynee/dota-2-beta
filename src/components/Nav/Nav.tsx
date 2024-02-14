@@ -8,8 +8,10 @@ import NavDropDown from "./NavDropDown";
 import LanguageSelector from "./LanguageSelector";
 import PrimaryButton from "../PrimaryButton";
 import Burger from "./Burger";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
+  const currentPath = usePathname();
   return (
     <div className="pt-3 px-8 bg-transparent text-white flex justify-between items-center absolute w-full top-0 z-50">
       <div className="flex lg:gap-10">
@@ -42,13 +44,13 @@ const Nav = () => {
               prefetch={false}
               key={index}
               href={`/${item}`}
-              className={`brightness-75 transition-all duration-200 delay-50 hover:brightness-125 cursor-pointer `}
+              className={`brightness-75 transition-all duration-200 delay-50 hover:brightness-125 border-[#FF6046] cursor-pointer py-1 ${
+                currentPath === `/${item}`
+                  ? "border-b-[3px] brightness-125"
+                  : ""
+              } ${index < 1 ? "-ml-4" : ""}`}
             >
-              <span
-                className={`uppercase tracking-[0.1875rem] font-[500] ${
-                  index < 1 ? "-ml-4" : ""
-                }`}
-              >
+              <span className={`uppercase tracking-[0.1875rem] font-[500] `}>
                 {item}
               </span>
             </Link>

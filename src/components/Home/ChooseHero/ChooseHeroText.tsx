@@ -26,7 +26,7 @@ const ChooseHeroText = () => {
             incredible abilities and devastating ultimates on your way to
             victory.
           </p>
-          <PrimaryButton>
+          <PrimaryButton href="/heroes">
             <p>View all heroes</p>
           </PrimaryButton>
         </div>

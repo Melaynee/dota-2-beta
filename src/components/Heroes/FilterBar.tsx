@@ -68,6 +68,12 @@ const FilterBar = ({
             >
               <p className="-skew-x-[15deg] mx-auto text-black/60 -mt-1">♦</p>
             </button>
+            <button
+              disabled
+              className="w-[34px] h-[34px] bg-[#808080] skew-x-[15deg] text-3xl"
+            >
+              <p className="-skew-x-[15deg] mx-auto text-black/60 -mt-1">♦</p>
+            </button>
           </div>
         </div>
         <div>
