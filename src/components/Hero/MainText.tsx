@@ -19,9 +19,9 @@ const primaryAttrLabel = (hero: any) => {
 const complexityLabel = (hero: any) => {
   let complexityLabelValue;
   let winrate = (hero.pro_win * 100) / hero.pro_pick;
-  if (winrate > 52) {
+  if (winrate > 51) {
     complexityLabelValue = 1;
-  } else if (winrate < 48) {
+  } else if (winrate < 47) {
     complexityLabelValue = 3;
   } else complexityLabelValue = 2;
 
@@ -34,7 +34,7 @@ const MainText = ({ heroData }: { heroData: any }) => {
       {heroData.map((hero: any) => (
         <div key={hero.id} className="flex h-[70vh]">
           <div className="flex flex-col justify-between h-1/2 my-auto translate-x-20">
-            <div className="-rotate-90 -translate-x-[30rem] gap-5 items-center flex absolute bottom-[75%] w-[800px]">
+            <div className="-rotate-90 -translate-x-[30rem] gap-5 items-center flex absolute bottom-[66%] w-[800px]">
               <Image
                 src={getAttributeIcon(hero.primary_attr) ?? ""}
                 alt={hero.primary_attr}
@@ -42,10 +42,10 @@ const MainText = ({ heroData }: { heroData: any }) => {
                 height={20}
                 className="w-6 h-6"
               />
-              <p className="uppercase font-semibold text-xl">
+              <p className="uppercase font-semibold text-xl tracking-widest whitespace-nowrap">
                 {hero.localized_name}
               </p>
-              <p className="text-white/60 font-light tracking-widest">
+              <p className="-mr-3 text-white/60 font-light text-xl tracking-widest">
                 {hero.id}
               </p>
               <div className="border-[1px] border-white/40 w-screen"></div>
@@ -60,7 +60,7 @@ const MainText = ({ heroData }: { heroData: any }) => {
                 />
                 {primaryAttrLabel(hero)}
               </p>
-              <p className="text-[72px] uppercase tracking-wide font-semibold -mt-5 -mb-7">
+              <p className="text-[72px] leading-[60px] uppercase tracking-wide font-semibold w-[600px] ">
                 {hero.localized_name}
               </p>
               <div className=" font-semibold m-2 w-[400px]">
