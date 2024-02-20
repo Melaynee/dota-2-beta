@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title: Dota 2 beta Website
 
-## Getting Started
+# Original website and owner website! 
+  https://www.dota2.com/home
+  https://www.valvesoftware.com/
+  
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The Dota 2 Technologies Website is a non-commercial web application built using Next.js, Tailwind CSS, TypeScript, Axios, and React Query. It serves as a comprehensive platform for Dota 2 enthusiasts, providing access to various features such as news updates, gameplay information, hero details, esports coverage, and more. Leveraging the OpenDota API, the site offers real-time data and insights, ensuring an immersive experience for users.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Home Page:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Hero Section:** Highlights key features of the website and welcomes users to the Dota 2 community.
+- **About Dota:** Provides an overview of Dota 2, its gameplay, history, and community.
+- **Hero Carousel:** Showcases popular heroes with dynamic images and brief descriptions.
+- **About Dota Pro Circuit:** Offers information about the Dota Pro Circuit, tournaments, and competitive gaming.
+- **Join Section:** Encourages users to join the community, participate in discussions, and contribute to the platform.
 
-## Learn More
+### Patches Page:
 
-To learn more about Next.js, take a look at the following resources:
+- Displays the latest gameplay patches and updates released for Dota 2.
+- Includes details about balance changes, new features, bug fixes, and improvements.
+- Allows users to explore past patches and track the evolution of the game over time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Gameplay Updates:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Provides in-depth analysis and insights into gameplay updates and meta shifts.
+- Offers tips, tricks, and strategies for players to improve their skills and stay competitive.
 
-## Deploy on Vercel
+### Heroes Page:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Offers comprehensive information about Dota 2 heroes, including their abilities, stats, lore, and gameplay roles.
+- Allows users to search for specific heroes, filter by attributes, and compare different heroes side by side.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### News Page:
+
+- Curates the latest news articles, announcements, and updates related to Dota 2.
+- Covers a wide range of topics, including game developments, community events, patch notes, and esports tournaments.
+
+### Esports Page:
+
+- Provides coverage of Dota 2 esports events, tournaments, matches, and standings.
+- Offers live updates, match schedules, player profiles, and team statistics.
+- Includes features such as live streaming, replays, and highlights for fans to follow their favorite teams and players.
+
+## Technologies Used
+
+- **Next.js:** A React framework for building server-side rendered web applications.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **TypeScript:** A statically typed superset of JavaScript for enhanced code reliability and maintainability.
+- **Axios:** A promise-based HTTP client for making API requests and fetching data.
+- **React Query:** A React library for managing and caching asynchronous data fetching.
+- **OpenDota API:** An API service for retrieving Dota 2 game data, including heroes, matches, players, and more.
+
+## How to Use
+
+1. **Clone the Repository:**
+   - Clone the repository to your local machine using the command: `git clone https://github.com/Melaynee/dota-2-beta>`
+
+2. **Install Dependencies:**
+   - Navigate to the project directory and install dependencies using npm: `cd project-directory && npm install`
+
+3. **Run the Development Server:**
+   - Start the development server to preview the website locally: `npm run dev`
+
+4. **Explore the Website:**
+   - Access the different pages and features of the website using the navigation menu.
+   - Interact with real-time data and stay updated on the latest Dota 2 news, gameplay, and esports events.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT), allowing for free use, modification, and distribution.
+
