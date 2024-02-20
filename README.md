@@ -1,6 +1,6 @@
-# Project Title: Dota 2 Technologies Website
+# Project Title: Dota 2 beta Website
 
-# Achtung! 
+# Original website and owner website! 
   https://www.dota2.com/home
   https://www.valvesoftware.com/
   
