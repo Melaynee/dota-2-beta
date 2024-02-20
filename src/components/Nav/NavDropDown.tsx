@@ -48,14 +48,25 @@ const Dropdown: React.FC<DropdownProps> = ({ className }) => {
                 { name: "PREVIOUS UPDATES", link: "pastupdates" },
               ].map((value) => {
                 return (
-                  <Link
-                    href={`/${value.link}`}
-                    key={value.name}
-                    className="block px-4 py-1 text-sm text-white  hover:ml-3 transition-all duration-300"
-                    role="menuitem"
-                  >
-                    {value.name}
-                  </Link>
+                  (value.link !== "pastupdates" && (
+                    <Link
+                      href={`/${value.link}`}
+                      key={value.name}
+                      className="block px-4 py-1 text-sm text-white  hover:ml-3 transition-all duration-300"
+                      role="menuitem"
+                    >
+                      {value.name}
+                    </Link>
+                  )) || (
+                    <Link
+                      href={`/#`}
+                      key={value.name}
+                      className="block px-4 py-1 text-sm text-white/20 "
+                      role="menuitem"
+                    >
+                      {value.name}
+                    </Link>
+                  )
                 );
               })}
               <div className="absolute top-0 left-0 bg-white/10 backdrop-blur-[6px]  w-full h-full z-[-1]"></div>
