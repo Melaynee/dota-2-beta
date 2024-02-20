@@ -1,3 +1,3 @@
-export const useCurrentPath = (path) => {
+export const useCurrentPath = (path: any) => {
   return path.split("/");
 };
