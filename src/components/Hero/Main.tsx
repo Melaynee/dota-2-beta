@@ -17,7 +17,7 @@ const Main = () => {
   const heroData = data?.filter((hero: any) => hero.name.slice(14) === path);
   return (
     isSuccess && (
-      <div className="pb-10 bg-white">
+      <div className="pb-10 bg-black">
         <div className="bg-heroesPage bg-cover bg-no-repeat h-[90vh] overflow-hidden relative">
           <MainText heroData={heroData} />
         </div>
