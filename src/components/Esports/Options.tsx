@@ -5,7 +5,7 @@ import SelectLeagueButton from "../SelectLeagueButton";
 import { useSearchParams } from "next/navigation";
 
 const Options = ({ onClick }: { onClick: () => void }) => {
-  const params = useSearchParams();
+  const params = new URLSearchParams(useSearchParams());
 
   const active = params.get("tab") ?? "esports";
   return (
