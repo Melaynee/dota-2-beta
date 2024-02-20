@@ -1,6 +1,6 @@
 # Project Title: Dota 2 beta Website
 
-# Original website and owner website! 
+## Original website and owner website! 
   https://www.dota2.com/home
   https://www.valvesoftware.com/
   
@@ -9,7 +9,8 @@
 
 The Dota 2 Technologies Website is a non-commercial web application built using Next.js, Tailwind CSS, TypeScript, Axios, and React Query. It serves as a comprehensive platform for Dota 2 enthusiasts, providing access to various features such as news updates, gameplay information, hero details, esports coverage, and more. Leveraging the OpenDota API, the site offers real-time data and insights, ensuring an immersive experience for users.
 
-## Key Features
+## Vercel page:
+https://dota-2-beta-git-main-melaynees-projects.vercel.app/
 
 ### Home Page:
 
